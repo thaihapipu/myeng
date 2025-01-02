@@ -4,7 +4,7 @@ def langeek_images():
     mycursor.execute("SELECT * FROM english.word_sounds")
     myresult = mycursor.fetchall()
 
-    with open("iamges.txt", "a") as file:
+    with open("images.txt", "a") as file:
         for x in myresult:
             is_cam = x[4] == 'cambridge'
             #print(f"is_cam: {is_cam}")
